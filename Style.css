@@ -152,6 +152,28 @@
     position: relative; 
 }
 
+#addItemTble {
+  width: 100vw; 
+  height: 100vh; 
+  border-style: none;
+  border-collapse: collapse; 
+}
+
+#addItemLeft, #addCusRight {
+  height: 100%;
+}
+
+#addItemLeft {
+  width: 31.7%;
+  background-color: #ED7076; 
+}
+
+#addItemRight {
+  width: 68.3%;
+  background-color:  #ED7076; 
+  position: relative; 
+}
+
 #addCusImg {
     border-radius: 3%;
     width: 100%;
