@@ -12,121 +12,143 @@
 
 </head>
 <body>
+  <h1 id="orderH1">Place Order</h1>
 
-    <h1 id="orderH1">
-        Place Order
-    </h1>
-
-    <div id="sidebar" class="d-flex flex-column flex-shrink-0 ">
-        <a href="/" id="logo-link" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <svg id="logo" class="bi me-2" width="0" height="32"><i class="fa-solid fa-burger fa-2xl" style="color: #97ac07;"></i></svg>
-          <span id="logo-text" class="fs-4"></i></span>
+  <div id="sidebar" class="d-flex flex-column flex-shrink-0">
+    <a href="/" id="logo-link" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg id="logo" class="bi me-2" width="0" height="32"><i class="fa-solid fa-burger fa-2xl" style="color: #97ac07;"></i></svg>
+      <span id="logo-text" class="fs-4"></span>
+    </a>
+    <hr id="top-divider">
+    <ul id="nav-list" class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" id="nav-home" class="nav-link active">
+          <svg id="icon-home" class="bi me-2" width="16" height="16"><i class="fa-solid fa-bars fa-xl" style="color: #26282c;"></i></svg>
+          <span id="text-home">Menu</span>
         </a>
-        <hr id="top-divider">
-        <ul id="nav-list" class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
-            <a href="#" id="nav-home" class="nav-link active">
-              <svg id="icon-home" class="bi me-2" width="16" height="16"><i class="fa-solid fa-bars fa-xl" style="color: #26282c;"></i></svg>
-              <span id="text-home">Menu</span>
-            </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" id="nav-customer" class="nav-link link-dark" role="button">
+          <svg id="icon-customer" class="bi me-2" width="16" height="16"><i class="fa-solid fa-user fa-xl" style="color: #26282c;"></i></svg>
+          <span id="text-customer">Customer</span>
+        </a>
+        <ul class="nav flex-column ms-3" id="customer-submenu" style="display: none;">
+          <li class="nav-item" id="liAddCus">
+            <a href="addCus.html" class="nav-link link-dark">Add Customer</a>
           </li>
-          <li>
-            <a href="addCus.html" id="nav-dashboard" class="nav-link link-dark" target="_blank">
-                <svg id="icon-dashboard" class="bi me-2" width="16" height="16"><i class="fa-solid fa-user-plus fa-xl" style="color: #26282c;"></i></svg>
-                <span id="text-dashboard">Add customer</span>
-            </a>
-            
-          </li>
-          <li>
-            <a href="#" id="nav-orders" class="nav-link link-dark">
-              <svg id="icon-orders" class="bi me-2" width="16" height="16"><i class="fa-solid fa-file-circle-plus fa-xl" style="color: #26282c;"></i></svg>
-              <span id="text-orders">Add item</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" id="nav-products" class="nav-link link-dark">
-              <svg id="icon-products" class="bi me-2" width="16" height="16"><i class="fa-regular fa-id-card fa-xl" style="color: #26282c;"></i></svg>
-              <span id="text-products">Search customer</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" id="nav-customers" class="nav-link link-dark">
-              <svg id="icon-customers" class="bi me-2" width="16" height="16"><i class="fa-solid fa-table-list fa-xl" style="color: #26282c;"></i></svg>
-              <span id="text-customers">Search item</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" id="nav-search" class="nav-link link-dark">
-              <svg id="icon-customers" class="bi me-2" width="16" height="16"><i class="fa-solid fa-file-invoice-dollar fa-xl" style="color: #26282c;"></i></svg>
-              <span id="text-customers">Genarate Bill</span>
-            </a>
+          <li class="nav-item" id="liDelCus">
+            <a href="deleteCus.html" class="nav-link link-dark">Delete Customer</a>
           </li>
         </ul>
-        <hr id="bottom-divider">
+      </li>
+      <li class="nav-item">
+        <a href="#" id="nav-items" class="nav-link link-dark">
+          <svg id="icon-orders" class="bi me-2" width="16" height="16"><i class="fa-solid fa-file-circle-plus fa-xl" style="color: #26282c;"></i></svg>
+          <span id="text-orders">Items</span>
+        </a>
+        <ul class="nav flex-column ms-3" id="items-submenu" style="display: none;">
+          <li class="nav-item" id="liAddItem">
+            <a href="addCus.html" class="nav-link link-dark">Add item</a>
+          </li>
+          <li class="nav-item" id="liDelItem">
+            <a href="deleteCus.html" class="nav-link link-dark">Delete item</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="#" id="nav-products" class="nav-link link-dark">
+          <svg id="icon-products" class="bi me-2" width="16" height="16"><i class="fa-regular fa-id-card fa-xl" style="color: #26282c;"></i></svg>
+          <span id="text-products">Search Customer</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" id="nav-customers" class="nav-link link-dark">
+          <svg id="icon-customers" class="bi me-2" width="16" height="16"><i class="fa-solid fa-table-list fa-xl" style="color: #26282c;"></i></svg>
+          <span id="text-customers">Search Item</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" id="nav-search" class="nav-link link-dark">
+          <svg id="icon-customers" class="bi me-2" width="16" height="16"><i class="fa-solid fa-file-invoice-dollar fa-xl" style="color: #26282c;"></i></svg>
+          <span id="text-customers">Generate Bill</span>
+        </a>
+      </li>
+    </ul>
+    <hr id="bottom-divider">
+  </div>
+
+  <div id="carousel-container">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
       </div>
-    
-      <div id="carousel-container">
-        <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/Img/homeBurgerImg1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="/Img/homePastaPng1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="/Img/homeChickenPng1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="/Img/homeSubPng1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="/Img/homeFricePng1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="/Img/homeBevPng1.png" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/Sample/Img/homeBurgerImg1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/Sample/Img/homePastaPng1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/Sample/Img/homeChickenPng1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/Sample/Img/homeSubPng1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/Sample/Img/homeFricePng1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/Sample/Img/homeBevPng1.png" class="d-block w-100" alt="...">
         </div>
       </div>
-    
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <script>
-        document.querySelector('#nav-home').addEventListener('click', function () {
-          var sidebar = document.getElementById('sidebar');
-          var carouselContainer = document.getElementById('carousel-container');
-          if (sidebar.style.width === "280px") {
-            sidebar.style.width = "4.5rem";
-            carouselContainer.style.marginLeft = "4.5rem";
-            carouselContainer.style.width = "calc(100% - 4.5rem)";
-            document.querySelectorAll('#sidebar [id^="text-"]').forEach(function (text) {
-              text.style.display = 'none';
-            });
-          } else {
-            sidebar.style.width = "280px";
-            carouselContainer.style.marginLeft = "280px";
-            carouselContainer.style.width = "calc(100% - 280px)";
-            document.querySelectorAll('#sidebar [id^="text-"]').forEach(function (text) {
-              text.style.display = 'inline';
-            });
-          }
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    document.querySelector('#nav-home').addEventListener('click', function () {
+      var sidebar = document.getElementById('sidebar');
+      var carouselContainer = document.getElementById('carousel-container');
+      if (sidebar.style.width === "280px") {
+        sidebar.style.width = "4.5rem";
+        carouselContainer.style.marginLeft = "4.5rem";
+        carouselContainer.style.width = "calc(100% - 4.5rem)";
+        document.querySelectorAll('#sidebar [id^="text-"]').forEach(function (text) {
+          text.style.display = 'none';
         });
-      </script>
+      } else {
+        sidebar.style.width = "280px";
+        carouselContainer.style.marginLeft = "280px";
+        carouselContainer.style.width = "calc(100% - 280px)";
+        document.querySelectorAll('#sidebar [id^="text-"]').forEach(function (text) {
+          text.style.display = 'inline';
+        });
+      }
+    });
+
+    document.getElementById('nav-customer').addEventListener('click', function() {
+      var submenu = document.getElementById('customer-submenu');
+      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    document.getElementById('nav-items').addEventListener('click', function() {
+      var submenu = document.getElementById('items-submenu');
+      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    });
+  </script>
 </body>
 </html>

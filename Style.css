@@ -377,13 +377,20 @@
   }
   
   #nav-home:hover,
-  #nav-dashboard:hover,
-  #nav-orders:hover,
+  #nav-customer:hover,
+  #nav-items:hover,
   #nav-products:hover,
   #nav-customers:hover,
   #nav-search:hover {
-    background-color: #97AC07; /* Color on hover */
-    color: white; /* Ensure text is visible on the background color */
+    background-color: #97AC07; 
+    color: white; 
+  }
+
+  #liAddItem:hover,
+  #liDelItem:hover,
+  #liAddCus:hover,
+  #liDelCus:hover {
+    background-color: #E2ED94; 
   }
   
   #nav-home:hover svg, #nav-home:hover i,
