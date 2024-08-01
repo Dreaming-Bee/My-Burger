@@ -447,4 +447,54 @@
     color: #E7913E;
     
   }
-  
+
+  #delCusBtn{
+    width: 125px;
+    background-color: #FCE5B3; 
+    border-color: black;
+    color:black; 
+    position: absolute;
+    top: 83%;
+    left: 65%;
+
+}
+
+#updateCusBtn{
+  width: 125px;
+  background-color: #FCE5B3; 
+  border-color: black;
+  color:black; 
+  position: absolute;
+  top: 83%;
+  left: 52%;
+
+}
+#updateCusTable {
+  width: 100vw; 
+  height: 100vh; 
+  border-style: none;
+  border-collapse: collapse; 
+}
+
+#updateCusLeft, #updateCusRight {
+  height: 100%;
+}
+
+#updateCusLeft {
+  width: 31.7%;
+  background-color: #FDD127; 
+}
+
+#updateCusRight {
+  width: 68.3%;
+  background-color:  #FDD127; 
+  position: relative; 
+}
+
+#updateCush1{
+  position: absolute;
+  right: 310px;
+  top: 80px;
+  font-size: 56px;
+  text-shadow: 2px 2px 5px #384833;
+}
