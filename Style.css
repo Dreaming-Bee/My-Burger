@@ -498,3 +498,54 @@
   font-size: 56px;
   text-shadow: 2px 2px 5px #384833;
 }
+#updateItemTble {
+  width: 100vw; 
+  height: 100vh; 
+  border-style: none;
+  border-collapse: collapse; 
+}
+
+#updateItemLeft, #updateItemRight {
+  height: 100%;
+}
+
+#updateItemLeft{
+  width: 31.7%;
+  background-color: #E7913E; 
+}
+
+#updateItemRight {
+  width: 68.3%;
+  background-color:  #E7913E; 
+  position: relative; 
+}
+
+#updateItemh1{
+  position: absolute;
+  right: 310px;
+  top: 80px;
+  font-size: 56px;
+  text-shadow: 2px 2px 5px #384833;
+}
+
+#delItemBtn{
+  width: 125px;
+  background-color: #FCE5B3; 
+  border-color: black;
+  color:black; 
+  position: absolute;
+  top: 83%;
+  left: 65%;
+
+}
+
+#updateItemBtn{
+width: 125px;
+background-color: #FCE5B3; 
+border-color: black;
+color:black; 
+position: absolute;
+top: 83%;
+left: 52%;
+
+}

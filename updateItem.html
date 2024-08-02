@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update</title>
+
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body>
+    
+
+    <table id="updateItemTble">
+        <tr>
+            <td id="updateItemLeft">
+                <div class="container" id="addCusImgCont">
+                    <img src="/Img/updateItemImg.jpg" alt="" id="addCusImg">
+                </div>
+            </td>
+            <td id="updateItemRight">
+                <div class="container" id="cusItemCont">
+                    <h1 id="updateItemh1">UPdate /Delete Item</h1>
+                    <i class="fa-regular fa-rectangle-xmark fa-2xl" id="closeTag" onclick="window.location.href='home.html';"></i>
+                    <img src="/Img/updateItemFormImg.png" alt="" id="frame">
+                    <div class="form-floating mb-3" id="cusID">
+                        <input type="text" class="form-control" id="cusIdField" placeholder="C001">
+                        <label for="floatingPassword">ID</label>
+                    </div>
+                    <div class="form-floating mb-3" id="cusName">
+                        <input type="text" class="form-control" id="cusIdField2" placeholder="Benara">
+                        <label for="floatingPassword">Name</label>
+                    </div>
+                    <div class="form-floating mb-3" id="cusPhone">
+                        <input type="text" class="form-control" id="cusIdField3" placeholder="+94 777 777 777">
+                        <label for="floatingPassword">Price</label>
+                    </div>
+                    <div class="form-floating mb-3" id="cusEmail">
+                        <input type="text" class="form-control" id="cusIdField3" placeholder="2%">
+                        <label for="floatingPassword">Discount</label>
+                    </div>
+                    <button type="button" class="btn btn-warning" id="updateItemBtn">Update</button>
+                    <button type="button" class="btn btn-warning" id="delItemBtn">Delete</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+
+</body>
+</html>
