@@ -1,0 +1,23 @@
+.deo{
+    color: black;
+    cursor: default;
+    position: relative;
+}
+#oItemNav{
+    position: relative;
+    top: 3cm;
+    left: 1cm;
+    width: 45%;
+    cursor: default;
+}
+
+.span-Order{
+    margin-left: 1.5cm;
+    margin-right: 0.5cm;
+}
+#containerOrder{
+    position: inherit;
+    top: 7cm;
+}
+
+
