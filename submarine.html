@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burgers</title>
+    <title>Submarine</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -17,7 +17,7 @@
       <table>
         <tr>
           <td>
-            <h1>Burgers</h1>
+            <h1>Submarine</h1>
             <div class="menu-scroll">
               <div class="menu">
                   <div class="item">
@@ -114,11 +114,37 @@
             </div>
           </td>
             <td id="secRow">
-             <order-details></order-details>
+              <div class="order-details">
+                  <div class="form-group">
+                      <label for="order-number">Order number</label>
+                      <input type="text" id="order-number">
+                  </div>
+                  <div class="form-group">
+                      <label for="customer">Customer</label>
+                      <input type="text" id="customer">
+                  </div>
+                  <div class="form-group">
+                      <label for="items-quantity">Items / Quantity</label>
+                      <div class="items-quantity">
+                          <textarea id="items" readonly>-----\n-----\n-----</textarea>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="date">Date</label>
+                      <input type="text" id="date">
+                  </div>
+                  <div class="form-group">
+                      <label for="total">Total</label>
+                      <input type="text" id="total">
+                  </div>
+                  <button id="checkout-button">Check-out</button>
+                  <button id="checkout-button1">Cancel</button>
+              </div>
           </td>
         </tr>
       </table>
     </div>
     <script src="script.js"></script>
+    <script></script>
 </body>
 </html>
