@@ -52,20 +52,21 @@ class OrderDetails extends HTMLElement {
 // Define the custom element
 customElements.define('order-details', OrderDetails);
 
-// Attach event listeners to menu items
-document.querySelectorAll('.item').forEach(item => {
-    item.addEventListener('click', function() {
-        item.setAttribute('data-id', itemId);
-        const name = item.getAttribute('data-name');
-        item.setAttribute('data-name', itemName);
-        const price = item.getAttribute('data-price');
-        
-        // Update the OrderDetails component
-        document.querySelector('order-details').addItem(name, price);
+// Ensure DOM is fully loaded before attaching event listeners
+document.addEventListener('DOMContentLoaded', function() {
+    // Attach event listeners to menu items
+    document.querySelectorAll('.item').forEach(item => {
+        item.addEventListener('click', function() {
+            const name = item.getAttribute('data-name');
+            const price = item.getAttribute('data-price');
+            
+            // Update the OrderDetails component
+            document.querySelector('order-details').addItem(name, price);
+        });
     });
-});
 
-// Attach event listener to the cancel button
-document.getElementById('checkout-button1').addEventListener('click', function() {
-    document.querySelector('order-details').clearItems();
+    // Attach event listener to the cancel button
+    document.querySelector('order-details').querySelector('#checkout-button1').addEventListener('click', function() {
+        document.querySelector('order-details').clearItems();
+    });
 });

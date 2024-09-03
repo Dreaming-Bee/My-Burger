@@ -18,16 +18,22 @@
                     <h1>Frice</h1>
                     <div class="menu-scroll">
                         <div class="menu">
-                            <div class="item">
+                            <div class="row" id="item-row">
+                            <div class="item"data-name="Classic Burger (Large)" data-price="3400">
                                 <div class="item-name">Classic Burger (Large)</div>
                             </div>
                             <div class="item">
                                 <div class="item-id">B123616</div>
                             </div>
                             <div class="item">
-                                <div class="item-price"data-name="Classic Burger (Large)">RS.3400</div>
+                                <div class="item-price">RS.3400</div>
                             </div>
                             <div class="item">
+                                <div class="item-disc">2%</div>
+                            </div>
+                        </div>
+                        <div class="row" id="item-row">
+                            <div class="item"data-name="Ham Burger (Large)" data-price="3400">
                               <div class="item-name">Ham Burger (Large)</div>
                           </div>
                           <div class="item">
@@ -36,13 +42,15 @@
                           <div class="item">
                               <div class="item-price">RS.3000</div>
                           </div>
+                        <div class="item">
+                            <div class="item-disk">-</div>
+                        </div>
+                    </div>
                             <!-- Additional items... -->
                         </div>
                     </div>
                 </td>
                 <td id="secRow">
-                    <!-- Use the custom component here -->
-                    <order-details></order-details>
                 </td>
             </tr>
         </table>

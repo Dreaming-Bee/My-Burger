@@ -50,7 +50,7 @@ h1 {
 .menu {
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr; 
     gap: 10px;
 }
 
@@ -65,7 +65,7 @@ h1 {
     background-color: #FCE5B3;
 }
 
-.item-name, .item-id, .item-price {
+.item-name, .item-id, .item-price,.item-disc {
     margin: 5px 0;
 }
 

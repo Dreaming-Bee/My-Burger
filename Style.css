@@ -250,6 +250,15 @@
     border-color: black;
 
 }
+#itemIdAdd,
+#itemNameAdd,
+#itemPriceAdd,
+#itemDiscountAdd{
+    width: 500px;
+    background-color: #FCE5B3;
+    border-color: black;
+
+}
 #addCusBtn{
     width: 250px;
     background-color: #FCE5B3; 
@@ -258,6 +267,16 @@
     position: absolute;
     top: 83%;
     left: 55%;
+
+}
+#addItemBtn{
+  width: 250px;
+  background-color: #FCE5B3; 
+  border-color: black;
+  color:black; 
+  position: absolute;
+  top: 83%;
+  left: 55%;
 
 }
 
